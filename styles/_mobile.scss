@@ -1,0 +1,44 @@
+@media(max-width: 768px) {
+    .input-wrapper > * {
+        display: none;
+    }
+
+    .grid-wrapper {
+        grid-template-columns: 1fr;
+
+        .item-wrapper {
+            margin: 0 auto;
+        }
+    }
+
+    .check-inner-wrapper {
+        width: 90%;
+    }
+    .input-grid-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-input-wrapper {
+        flex-direction: column;
+
+        input {
+            margin: .25rem 0;
+            padding: .5rem 0;
+            font-size: 20px;
+        }
+
+        .icon-card-number-wrapper {
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        .card-info-wrapper {
+            justify-content: flex-start;
+            width: 100%;
+        }
+    }
+
+    .process-wrapper {
+        width: 90%;
+    }
+}

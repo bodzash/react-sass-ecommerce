@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "_config";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-style: "Roboto", sans-serif;
+}
+
+body {
+    background-color: $ltgray;
+    overflow-y: scroll
+}
+
+//Header
+@import "_Header";
+
+/* Item Wrapper */
+.grid-wrapper {
+    width: 90%;
+    margin: 2rem auto;
+    margin-top: 6rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+        grid-column: 1/-1;
+    }
+}
+
+/* buy out btns */
+
+.buy-out-wrapper {
+    width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .btn-wrapper {
+
+        & button {
+            @include buttonGeneral;
+            color: white;
+            background-color: $red;
+            margin: 0 .5rem;
+            padding: .6rem 1rem;
+        }
+    }
+
+    button:last-of-type {
+        background-color: $blue;
+        margin-right: 0;
+    }
+}
+
+.check-wrapper {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+//Item
+@import "_Item";
+
+//Checkout
+@import "_Checkout";
+
+//Processing
+@import "_Processing";
+
+//Errors
+.show-error {
+    margin: 1rem 0;
+    margin-bottom: .5rem;
+    color: $red;
+}
+
+
+/* media query */
+@import "_mobile"

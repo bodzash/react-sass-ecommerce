@@ -1,0 +1,24 @@
+//Vars
+$grayDrop: rgb(201, 199, 199);
+$dgray: rgb(190, 190, 190);
+$gray: rgb(240, 240, 240);
+$ltgray: rgb(252, 252, 252);
+
+//Button colors
+$blue: rgb(57, 57, 216);
+$red: rgb(199, 63, 63);
+
+@mixin buttonGeneral {
+    border: 0;
+    padding: .4rem 1rem;
+    font-weight: 700;
+    margin-left: .2rem;
+    border-radius: .25rem;
+    letter-spacing: .05rem;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}

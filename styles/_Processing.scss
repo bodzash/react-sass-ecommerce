@@ -1,0 +1,58 @@
+$loaderCut: .75rem;
+$loaderRadius: 6rem;
+
+.process-wrapper {
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 6rem;
+    box-shadow: 0px 4px 4px $grayDrop;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .inner-process-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .loader {
+        border: $loaderCut solid $gray;
+        border-top: $loaderCut solid $dgray;
+        border-radius: 50%;
+        width: $loaderRadius;
+        height: $loaderRadius;
+        animation: spin 1s linear infinite;
+
+        margin: 1rem 0;
+    }
+
+    h3 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: $dgray;
+        align-self: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        align-self: flex-start;
+        @include buttonGeneral;
+        color: black;
+        background-color: white;
+        border: 2px solid $gray;
+    }
+}
+
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
