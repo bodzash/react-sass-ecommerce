@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom'
 
 import App from './components/App'
 
-import "./ripple"
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
